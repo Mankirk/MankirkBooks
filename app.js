@@ -56,7 +56,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(8080 || process.env.PORT ,function(){
+app.listen(process.env.PORT ,function(){
   console.log("Server online")
 })
 module.exports = app;

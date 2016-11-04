@@ -1,0 +1,43 @@
+$defBlue:#4da6ff;
+$defOrange:orange;
+
+
+.navbar{
+  a{
+   font-weight:bold;
+   color:white;
+   }
+  background-color:$defBlue;
+  .navbar-brand{
+  font-family:Lobster;
+  font-size:30px;
+  }
+  .nav{
+   display:flex;
+   height:32px;
+   #drop{
+   background-color:white;
+   border:solid 1px;
+   }
+  }
+  .navbar-nav  li  a:hover{
+  background-color:#ff9933;
+  color: darken( $defBlue, 40% ) ;
+  }
+  .navbar-nav  li  a:focus{
+  background-color:$defBlue;
+  color:black;  
+  }
+  h3{
+  font-family:lobster;
+  background-color:$defBlue;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  top:50px;
+  margin:0px;
+  }
+ 
+
+}
+

@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #4da6ff; }
+  .navbar a {
+    font-weight: bold;
+    color: white; }
+  .navbar .navbar-brand {
+    font-family: Lobster;
+    font-size: 30px; }
+  .navbar .nav {
+    display: flex;
+    height: 32px; }
+    .navbar .nav #drop {
+      background-color: white;
+      border: solid 1px; }
+  .navbar .navbar-nav li a:hover {
+    background-color: #ff9933;
+    color: #004080; }
+  .navbar .navbar-nav li a:focus {
+    background-color: #4da6ff;
+    color: black; }
+  .navbar h3 {
+    font-family: lobster;
+    background-color: #4da6ff;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    margin: 0px; }
+
+/*# sourceMappingURL=nav.css.map */

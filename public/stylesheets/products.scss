@@ -1,0 +1,134 @@
+$defBlue:#4da6ff;
+$defOrange:orange;
+$headerHeight:70px;
+$footerHeight:50px;
+$sideStripeWidth:140px;
+
+
+/* page layout style*/
+html {
+    position: relative;
+    min-height: 100%;
+    
+}
+body {
+    margin-bottom:$footerHeight ;
+    margin-top:$headerHeight;
+    
+}
+footer {
+    text-align:center;
+    background:$defOrange;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $footerHeight;
+    p{
+      padding-top:15px;
+  }
+   
+}
+#header{
+  text-align:center;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height:$headerHeight ;
+}
+
+#left{
+  position: absolute;
+  width:$sideStripeWidth;
+  left:0;
+  top:$headerHeight;
+  bottom:$footerHeight;
+  
+}
+#right{
+  position: absolute;
+  width:$sideStripeWidth;
+  right:0;
+  top:$headerHeight;
+  bottom:$footerHeight;
+  
+}
+#content{
+  
+  
+  min-width:350px;
+  margin-left:$sideStripeWidth;
+  margin-right:$sideStripeWidth;
+  padding-top:$headerHeight +10px ;
+}
+
+/*navbar setup */
+.navbar{
+  a{
+   font-weight:bold;
+   color:white;
+   }
+  background-color:$defBlue;
+  .navbar-brand{
+  font-family:Lobster;
+  font-size:30px;
+  }
+  .nav{
+   display:flex;
+   height:32px;
+   #drop{
+   background-color:white;
+   border:solid 1px;
+   }
+  }
+  .navbar-nav  li  a:hover{
+  background-color:#ff9933;
+  color: darken( $defBlue, 40% ) ;
+  }
+  .navbar-nav  li  a:focus{
+  background-color:$defBlue;
+  color:black;  
+  }
+  
+  h3{
+  font-family:lobster;
+  background-color:$defBlue;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  top:50px;
+  margin:0px;
+  }
+ 
+}
+ /*Tile style*/
+
+
+#til{
+  display:flex;
+  border-bottom:solid $defOrange;
+  .details{
+  width:50%;
+  height:300px;
+  span{
+    font-weight:bold;
+  }
+  }
+  img{
+  width:50%;
+  float:right;
+  max-height:250px;
+  margin-bottom:10px;
+  margin-top:10px;
+  }
+}
+/*some additional style*/
+input:focus {
+ border:solid $defOrange;
+}
+
+#about{
+  padding-left:20px;
+}

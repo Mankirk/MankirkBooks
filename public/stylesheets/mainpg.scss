@@ -1,0 +1,111 @@
+
+$defBlue:#4da6ff;
+$defOrange:orange;
+$headerHeight:70px;
+$footerHeight:50px;
+$sideStripeWidth:150px;
+
+/* page template css */
+html {
+    position: relative;
+    min-height: 100%;
+   
+}
+body {
+    margin-bottom:$footerHeight ;/* bottom = footer height */
+    margin-top:$headerHeight;
+    
+}
+footer {
+    text-align:center;
+    background: $defOrange;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $footerHeight;
+   
+}
+#header{
+  text-align:center;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height:$headerHeight ;
+}
+
+#left{
+  position: absolute;
+  width:$sideStripeWidth;
+  left:0;
+  top:$headerHeight;
+  bottom:$footerHeight;
+  
+}
+#right{
+  position: absolute;
+  width:$sideStripeWidth;
+  right:0;
+  top:$headerHeight;
+  bottom:$footerHeight;
+  
+}
+#content{
+  min-width:350px;
+  margin-left:$sideStripeWidth;
+  margin-right:$sideStripeWidth;
+  
+}
+#main{
+  padding-top:70px;
+  padding-bottom:50px;
+}
+
+
+#fir{
+background-image:url('https://images.unsplash.com/photo-1470549638415-0a0755be0619');
+
+}
+#sec{
+  background-image:url('https://images.unsplash.com/photo-1463320726281-696a485928c7');
+}
+#th{
+  background-image:url('https://images.unsplash.com/photo-1450221882353-ed6177a2ff23');
+}
+#for{
+   background-image:url('https://images.unsplash.com/photo-1452277852297-84752bc9f809');
+  
+}
+
+.col-xs-4{
+  border:solid 1px;
+  margin:20px;
+  height:300px;
+background-size:cover;
+  text-align:center;
+  color:white;
+  font-size:30px;
+  a{
+  display:flex;
+  margin-top:100px;
+  color:$defOrange;
+  text-decoration: none;
+  background-color: rgba(105,100,100,0.5);
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  
+}
+#ro{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  
+}
+
+
+
+
